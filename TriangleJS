@@ -1,0 +1,22 @@
+HTML:
+<canvas width="640" height="480"></canvas>
+
+
+JAVASCRIPT:
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+
+// Set line style (color, width)
+ctx.strokeStyle = 'black'; 
+ctx.lineWidth = 2;
+
+
+// Draw lines to form triangle
+ctx.beginPath();
+
+ctx.moveTo(200, 100);
+ctx.lineTo(100, 300);
+ctx.lineTo(300,300);
+ctx.lineTo(200,100);
+
+ctx.stroke();
